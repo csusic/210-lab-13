@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    //array of game scores
+    //vector of game scores
     std::vector<int> gameScores;
     //temporary variable for reading scores
     int tempNumber;
@@ -24,7 +24,6 @@ int main() {
     
     //numbers in the file (int)
     while (fin >> tempNumber) {  //reads int tempNumber
-        cout << tempNumber << " ";
         gameScores.push_back(tempNumber);
     }
     
@@ -32,7 +31,7 @@ int main() {
     cout << "Game Scores Vector: ";
     for (int val : gameScores) cout << val << " "; cout << endl;
     
-    /*//Ascending sort (sort)
+    //Ascending sort (sort)
     sort(gameScores.begin(), gameScores.end());
     cout << "Sort: ";
     for (int val : gameScores) cout << val << " "; cout << endl;
@@ -52,7 +51,7 @@ int main() {
     //Array of zeros
     cout << "Array of zeros: ";
     fill(gameScores.begin(), gameScores.end(), 0);
-    for (int val : gameScores) cout << val << " "; cout << endl;*/
+    for (int val : gameScores) cout << val << " "; cout << endl;
     
     fin.close();
     
